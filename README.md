@@ -19,7 +19,9 @@ Furthermore, the following updates will also include smoother integrations. We a
 
 ## Demo App
 
-You can try the demo chat; the following recording shows how it works.
+You can try the [demo chat](https://github.com/windwithbirds/MobileLLM-Demo/). The following recording shows how it works:
+
+
 
 ## Usage
 
