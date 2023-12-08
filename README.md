@@ -34,8 +34,8 @@ https://github.com/windwithbirds/mobilellm/assets/8698156/63e663f6-0460-4eeb-aa4
 import Facade
 
 do {
-    try model.load(model: "path/to/model", parameters: .default, type: .rwkv)
-    let result = try await model.ask(question: "Tell me about the meaning of life")
+    try MobileLLM.shared.load(model: "path/to/model", parameters: .default, type: .rwkv)
+    let result = try await MobileLLM.shared.ask(question: "Tell me about the meaning of life")
     print(result)
 } catch {
     print(error.localizedDescription)
@@ -54,9 +54,9 @@ For more information on what an RAG is, check the [video](https://www.youtube.co
 import Facade
 
 do {
-    try model.load(model: url, parameters: .default, type: .rwkv)
-    try model.add(document: "The dog is named Max")
-    let result = try await model.ask(question: "How is the dog named?", similarityThreshold: 0.5)
+    try MobileLLM.shared.load(model: "path/to/model", parameters: .default, type: .rwkv)
+    try MobileLLM.shared.add(document: "The dog is named Max")
+    let result = try await MobileLLM.shared.ask(question: "How is the dog named?", similarityThreshold: 0.5)
     print(result)
 } catch {
     print(error.localizedDescription)
