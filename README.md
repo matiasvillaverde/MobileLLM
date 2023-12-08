@@ -21,7 +21,7 @@ Furthermore, the following updates will also include smoother integrations. We a
 
 You can try the [demo chat](https://github.com/windwithbirds/MobileLLM-Demo/). The following recording shows how it works:
 
-
+https://github.com/windwithbirds/mobilellm/assets/8698156/63e663f6-0460-4eeb-aa4f-25b86f7f6202
 
 ## Usage
 
