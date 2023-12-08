@@ -25,12 +25,14 @@ https://github.com/windwithbirds/mobilellm/assets/8698156/63e663f6-0460-4eeb-aa4
 
 ## Usage
 
-1. Download the model from Huggingface
-2. Select the model from the file system
-3. Load the model in Memory
+1. Download the [model RWKV from Huggingface](https://huggingface.co/integer256/rwkv-ios/tree/main)
+2. Select the model from the file system of your device
+3. Load the model in memory
 4. Send a prompt
 
 ```swift
+import Facade
+
 do {
     try model.load(model: "path/to/model", parameters: .default, type: .rwkv)
     let result = try await model.ask(question: "Tell me about the meaning of life")
@@ -49,6 +51,8 @@ For more information on what an RAG is, check the [video](https://www.youtube.co
 3. The LLM will respond based on the local knowledge
 
 ```swift
+import Facade
+
 do {
     try model.load(model: url, parameters: .default, type: .rwkv)
     try model.add(document: "The dog is named Max")
